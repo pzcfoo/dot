@@ -118,7 +118,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+g exec /home/paul/_scripts/lock.sh
+bindsym $mod+Shift+g exec $HOME/_repos/dot/_scripts/lock.sh
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -148,7 +148,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # launch polybar
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id $HOME/_repos/dot/_scripts/launch.sh
 
 # borders
 default_border pixel 2
