@@ -33,7 +33,7 @@ ZSH_THEME="test"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-COMPLETION_WAITING_DOTS="true"
+#COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -81,7 +81,19 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
+
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Postgres
+export PGHOST="localhost"
+export PGUSER="webapp"
+export PGPASSWORD="webapp"
+
+# Gurobi
+export GUROBI_HOME="/opt/gurobi801/linux64"
+export PATH="${PATH}:${GUROBI_HOME}/bin"
+export GUROBI_LIB="gurobi80"
+
+
+

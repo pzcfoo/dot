@@ -30,11 +30,9 @@
 
 ! URxvt
 URxvt*scrollBar: false
-URxvt*font: xft:Source Code Pro:size=11:antialias=true
-
+URxvt*font: xft:DejaVu Sans Mono:size=11:antialias=true, xft:FontAwesome:size=11,  xft:Source Code Pro:size=11:antialias=true
 URxvt*inheritPixmap: true
 URxvt*transparent: true
-! URxvt*shading: 0 to 99 darkens, 101 to 200 lightens
-URxvt*shading: 20 
+URxvt*shading: 20  ! 0 to 99 darkens; 101 to 200 lightens
 
 
