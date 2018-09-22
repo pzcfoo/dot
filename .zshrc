@@ -85,6 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# aliases
+
+
 # Postgres
 export PGHOST="localhost"
 export PGUSER="webapp"
@@ -95,5 +98,9 @@ export GUROBI_HOME="/opt/gurobi801/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export GUROBI_LIB="gurobi80"
 
+# Cplex
+export CPLEX_HOME="/opt/cplex128"
 
+# coin-Osi
+export COIN_OSI_HOME="/opt/coin-Osi"
 
