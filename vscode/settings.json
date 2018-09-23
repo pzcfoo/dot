@@ -1,0 +1,42 @@
+{
+    // User settings
+    "breadcrumbs.enabled": true,
+    "debug.toolBarLocation": "docked",
+    "editor.accessibilitySupport": "off",
+    "editor.cursorBlinking": "expand",
+    "editor.cursorStyle": "block",
+    "editor.fontFamily": "Source Code Pro",
+    "editor.fontSize": 15,
+    "editor.lineNumbers": "relative",
+    "editor.snippetSuggestions": "bottom",
+    "explorer.sortOrder": "type",
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "keyboard.dispatch": "keyCode",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.explorerKind": "external",
+    "terminal.integrated.rendererType": "dom",
+    "window.enableMenuBarMnemonics": false,
+    "window.newWindowDimensions": "inherit",
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.enableExperiments": false,
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "zenMode.hideActivityBar": false,
+
+    // Extensions
+    // - cpp
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    // - vim
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-c>": false,
+        "<C-d>": false,
+        "<C-e>": false,
+        "<C-k>": false,
+    },
+}
