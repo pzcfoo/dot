@@ -28,7 +28,7 @@ secondary = #e60053
 alert = #bd2c40
 
 [bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
+monitor = ${env:MONITOR:}
 width = 100%
 height = 32
 ;offset-x = 1%
@@ -55,7 +55,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=12;1
 font-2 = Unifont:fontformat=truetype:size=8:antialias=false;0
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = 
 modules-right = xbacklight alsa memory filesystem cpu wlan battery temperature date 
 

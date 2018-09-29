@@ -151,4 +151,4 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/_repos/dot/_scripts/launch.sh
 
 # borders
-default_border pixel 2
+default_border pixel 0
