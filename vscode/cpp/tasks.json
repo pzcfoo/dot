@@ -102,7 +102,7 @@
         {
             "label": "_remove_lib_artifacts",
             "type": "shell",
-            "command": "rm -r engineutils; rm -r mathsutils_energy_dispatch_engine_gurobi;",
+            "command": "rm -f ${buildArtifacts}",
             "presentation": {
                 "echo": true,
                 "reveal": "never",
