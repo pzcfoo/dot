@@ -1,0 +1,113 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make -j7",
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            }
+        },
+        {
+            "label": "rebuild",
+            "type": "shell",
+            "dependsOn": ["_clean", "_make"]
+        },
+        {
+            "label": "rebuild - debug",
+            "type": "shell",
+            "dependsOn": ["_clean", "_make_debug"]
+        },
+
+        // Cmake
+        {
+            "label": "_cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-DBUILD_CPLEX=False", "."
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            }
+        },
+        {
+            "label": "_cmake_debug",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-DBUILD_CPLEX=False", "-DCMAKE_BUILD_TYPE=Debug", "."
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            }
+        },
+
+        // Make
+        {
+            "label": "_make",
+            "type": "shell",
+            "command": "make -j7",
+            "dependsOn": ["_cmake"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            }
+        },
+        {
+            "label": "_make_debug",
+            "type": "shell",
+            "command": "make -j7",
+            "dependsOn": ["_cmake_debug"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "panel": "shared",
+            }
+        },
+
+        // Clean up
+        {
+            "label": "_clean",
+            "type": "shell",
+            "command": "make clean; rm Makefile",
+            "dependsOn": ["_bust_cmake_cache", "_remove_lib_artifacts"],
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "panel": "shared",
+            }
+        },
+        {
+            "label": "_bust_cmake_cache",
+            "type": "shell",
+            "command": "rm CMakeCache.txt; rm -r CMakeFiles;",
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "panel": "shared",
+            }
+        },
+        {
+            "label": "_remove_lib_artifacts",
+            "type": "shell",
+            "command": "rm -r engineutils; rm -r mathsutils_energy_dispatch_engine_gurobi;",
+            "presentation": {
+                "echo": true,
+                "reveal": "never",
+                "panel": "shared",
+            }
+        }
+    ]
+}
