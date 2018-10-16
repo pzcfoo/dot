@@ -99,6 +99,7 @@ fi
 export PGHOST="localhost"
 export PGUSER="webapp"
 export PGPASSWORD="webapp"
+export PGDATABASE="postgres"
 
 # Gurobi
 export GUROBI_HOME="/opt/gurobi801/linux64"
