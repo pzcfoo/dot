@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${pathToEngine}",
-            "args": ["--out", "${pathToInput}", "--mode", "optimise"],
+            "args": ["--out", "${pathToInput}"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

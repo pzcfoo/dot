@@ -30,9 +30,6 @@
             "label": "_cmake",
             "type": "shell",
             "command": "cmake",
-            "args": [
-                "-DBUILD_CPLEX=False", "."
-            ],
             "presentation": {
                 "echo": true,
                 "reveal": "always",
@@ -44,7 +41,7 @@
             "type": "shell",
             "command": "cmake",
             "args": [
-                "-DBUILD_CPLEX=False", "-DCMAKE_BUILD_TYPE=Debug", "."
+                "-DCMAKE_BUILD_TYPE=Debug", "."
             ],
             "presentation": {
                 "echo": true,
