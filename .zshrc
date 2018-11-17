@@ -102,9 +102,10 @@ export PGPASSWORD="webapp"
 export PGDATABASE="postgres"
 
 # Gurobi
-export GUROBI_HOME="/opt/gurobi801/linux64"
+export GUROBI_HOME="/opt/gurobi810/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
-export GUROBI_LIB="gurobi80"
+export GUROBI_LIB="gurobi81"
+export GRB_LICENSE_FILE="/opt/gurobi810/gurobi.lic"
 
 # Cplex
 export CPLEX_HOME="/opt/cplex128"
