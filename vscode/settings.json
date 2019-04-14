@@ -52,4 +52,14 @@
     "editor.parameterHints.enabled": false,
     "workbench.colorTheme": "Winter is Coming (Dark)",
     "window.menuBarVisibility": "toggle",
+    "explorer.confirmDelete": false,
+    "python.venvPath": "/home/paul/_work/virtualenvs",
+    "python.venvFolders": [
+        "envs",
+        ".pyenv",
+        ".direnv",
+        "venv",
+        "*-venv",
+        "venv-*"
+    ],
 }
