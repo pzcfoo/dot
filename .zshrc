@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/paul/.oh-my-zsh"
+export ZSH="/home/paul/.oh-my-zsh"
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="test"
@@ -92,6 +92,9 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# ranger
+export EDITOR="nvim"
+
 # aliases
 
 
@@ -112,4 +115,28 @@ export CPLEX_HOME="/opt/cplex128"
 
 # coin-Osi
 export COIN_OSI_HOME="/opt/coin-Osi"
+
+function _cwd()
+{
+    pwd | xclip -i
+}
+
+function _data_venv()
+{
+    source /home/paul/_work/virtualenvs/data-venv/bin/activate
+}
+
+function _generic_venv()
+{
+    source /home/paul/_work/virtualenvs/generic-venv/bin/activate
+}
+
+function _grb_6()
+{
+    export GUROBI_HOME="/opt/gurobi651/linux64"
+    export PATH="${PATH}:${GUROBI_HOME}/bin"
+    # export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
+    export GUROBI_LIB="gurobi65"
+    export GUROBI_INCLUDE_DIR="/opt/gurobi651/linux64/include"
+}
 
