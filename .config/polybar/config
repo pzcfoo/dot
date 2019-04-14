@@ -83,7 +83,8 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+#label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -161,7 +162,7 @@ label-song-ellipsis = true
 type = internal/xbacklight
 
 format = <label> <bar>
-label = BL
+label = b 
 
 bar-width = 12
 bar-indicator = |
@@ -169,7 +170,7 @@ bar-indicator-foreground = #fff
 bar-indicator-font = 2
 bar-fill = ─
 bar-fill-font = 2
-bar-fill-foreground = #9f78e1
+#bar-fill-foreground = #9f78e1
 bar-empty = ─
 bar-empty-font = 2
 bar-empty-foreground = ${colors.foreground-alt}
@@ -203,6 +204,7 @@ format = <ramp-used> <label>
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #4bffdc
+#label = "gb"
 label = "%gb_used%"
 
 ; Only applies if <ramp-used> is used
@@ -261,7 +263,8 @@ format = <label>
 format-prefix-foreground = ${colors.foreground-alt}
 format-underline = #0a6cf5
 
-label = " %date% %time%"
+#label = " %date% %time%"
+label = "%date% %time%"
 
 [module/pulseaudio]
 type = internal/pulseaudio
@@ -274,13 +277,13 @@ label-muted = 🔇 muted
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+#bar-volume-foreground-0 = #55aa55
+#bar-volume-foreground-1 = #55aa55
+#bar-volume-foreground-2 = #55aa55
+#bar-volume-foreground-3 = #55aa55
+#bar-volume-foreground-4 = #55aa55
+#bar-volume-foreground-5 = #f5a70a
+#bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -288,13 +291,13 @@ bar-volume-fill = ─
 bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+#bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/alsa]
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+label-volume = v 
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
@@ -302,13 +305,13 @@ format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+#bar-volume-foreground-0 = #55aa55
+#bar-volume-foreground-1 = #55aa55
+#bar-volume-foreground-2 = #55aa55
+#bar-volume-foreground-3 = #55aa55
+#bar-volume-foreground-4 = #55aa55
+#bar-volume-foreground-5 = #f5a70a
+#bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
 bar-volume-indicator =
 ba|r-volume-indicator-font = 2
