@@ -12,6 +12,7 @@ gaps outer 6
 
 # smart borders
 smart_borders on
+smart_gaps on
 
 # Font
 font pango:Source Code Pro 12px 8

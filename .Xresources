@@ -62,7 +62,6 @@
 !*color7: #a89984
 !*color15: #ffd7af
 
-# test
 *.foreground:   #ebe0c3
 *.background:   #282828
 
@@ -107,6 +106,6 @@ URxvt*scrollBar: false
 URxvt*font:  xft:Source Code Pro:size=11:antialias=true, xft:FontAwesome:size=11
 URxvt*inheritPixmap: true
 URxvt*transparent: true
-URxvt*shading: 45 ! 0 to 99 darkens; 101 to 200 lightens
+URxvt*shading: 30 ! 0 to 99 darkens; 101 to 200 lightens
 
 
