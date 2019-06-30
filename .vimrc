@@ -1,8 +1,8 @@
 
 " VIM Configuration File
-
 set rnu
 set nu
+set signcolumn=yes
 
 " parenthesis braces closing pair gets highlighted
 set showmatch 
