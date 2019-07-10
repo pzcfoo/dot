@@ -2,10 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/paul/.oh-my-zsh"
+export ZSH="/home/foo/.oh-my-zsh"
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="test"
+ZSH_THEME="custom"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -53,10 +53,10 @@ export PGPASSWORD="webapp"
 export PGDATABASE="postgres"
 
 # Gurobi
-export GUROBI_HOME="/opt/gurobi810/linux64"
+export GUROBI_HOME="/opt/gurobi811/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export GUROBI_LIB="gurobi81"
-export GRB_LICENSE_FILE="/opt/gurobi810/gurobi.lic"
+export GRB_LICENSE_FILE="/opt/gurobi811/gurobi.lic"
 
 # Cplex
 export CPLEX_HOME="/opt/cplex128"
@@ -82,17 +82,23 @@ function _data_venv()
     source /home/paul/_work/virtualenvs/data-venv/bin/activate
 }
 
-function _generic_venv()
+function _gen_venv()
 {
-    source /home/paul/_work/virtualenvs/generic-venv/bin/activate
+    source /home/foo/work/virtualenvs/gen-venv/bin/activate
 }
 
-function _grb_6()
+function _grb_652()
+{
+    export GUROBI_HOME="/opt/gurobi652/linux64"
+    export PATH="${PATH}:${GUROBI_HOME}/bin"
+    export GUROBI_LIB="gurobi65"
+    export GUROBI_INCLUDE_DIR="/opt/gurobi652/linux64/include"
+}
+
+function _grb_651()
 {
     export GUROBI_HOME="/opt/gurobi651/linux64"
     export PATH="${PATH}:${GUROBI_HOME}/bin"
-    # export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
     export GUROBI_LIB="gurobi65"
     export GUROBI_INCLUDE_DIR="/opt/gurobi651/linux64/include"
 }
-
