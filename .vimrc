@@ -57,6 +57,7 @@ let mapleader = ","
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
+nnoremap <C-x> :bdelete<CR>
 " window navigation
 nnoremap <leader>j <C-W><C-J>
 nnoremap <leader>k <C-W><C-K>
