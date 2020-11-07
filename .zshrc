@@ -2,13 +2,10 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/paul/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="test"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
@@ -62,30 +59,12 @@ export GRB_LICENSE_FILE="/opt/gurobi810/gurobi.lic"
 # Cplex
 export CPLEX_HOME="/opt/cplex128"
 
-# coin-Osi
-export COIN_OSI_HOME="/opt/coin-Osi"
-
 # NFO engine
-export nfo="/home/paul/work/repos/engines/network_flow_engine/BasicNFO/Build/BasicNFO.exe"
+export nfo="$HOME/work/repos/engines/network_flow_engine/BasicNFO/Build/BasicNFO.exe"
 
 function _cwd()
 {
     pwd | xclip -i
-}
-
-function _trp_venv()
-{
-    source /home/paul/_work/virtualenvs/tropofy-testing-venv/bin/activate
-}
-
-function _data_venv()
-{
-    source /home/paul/_work/virtualenvs/data-venv/bin/activate
-}
-
-function _generic_venv()
-{
-    source /home/paul/_work/virtualenvs/generic-venv/bin/activate
 }
 
 function _grb_6()
