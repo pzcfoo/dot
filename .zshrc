@@ -43,7 +43,7 @@ fi
 
 # ranger
 export EDITOR="nvim"
-
+export PATH="${PATH}:${HOME}/.local/bin"
 # aliases
 
 # Postgres
@@ -65,7 +65,7 @@ export CPLEX_HOME="/opt/cplex128"
 export COIN_OSI_HOME="/opt/coin-Osi"
 
 # NFO engine
-export nfo="/home/paul/_work/repos/engines/network_flow_engine/BasicNFO/Build/BasicNFO.exe"
+export nfo="/home/paul/work/repos/engines/network_flow_engine/BasicNFO/Build/BasicNFO.exe"
 
 function _cwd()
 {

@@ -19,7 +19,7 @@ Plug('bfrg/vim-cpp-modern')
 call plug#end()
 
 " nvims virtual env
-let g:python3_host_prog = '/home/paul/work/virtualenvs/neovim-venv/bin/python'
+let g:python3_host_prog = '/home/paul/work/virtualenvs/neovim/bin/python'
 
 " deocomplete
 let deoplete#enable_at_startup = 1

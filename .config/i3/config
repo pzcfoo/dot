@@ -7,8 +7,8 @@
 set $mod Mod4
 
 # i3-gaps
-gaps inner 12
-gaps outer 6
+gaps inner 6
+gaps outer 3
 
 # smart borders
 smart_borders on
@@ -122,7 +122,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-bindsym $mod+Shift+g exec $HOME/_repos/personal/dot/_scripts/lock.sh
+bindsym $mod+Shift+g exec $HOME/personal/repos/dot/_scripts/lock.sh 
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

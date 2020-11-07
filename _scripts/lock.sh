@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-i3lock -i ~/Documents/wallpapers/1920x1080/montana.jpg \
+i3lock -i ~/personal/documents/wallpapers/plant_1.jpg \
 	--insidecolor=373445ff \
 	--keyhlcolor=d23c3dff \
 	--ringcolor=ff000000 \
