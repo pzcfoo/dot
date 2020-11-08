@@ -15,6 +15,7 @@ Plug('scrooloose/nerdtree')
 Plug('vim-airline/vim-airline')
 Plug('vim-airline/vim-airline-themes')
 Plug('bfrg/vim-cpp-modern')
+Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 
 call plug#end()
 
