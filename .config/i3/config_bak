@@ -159,7 +159,7 @@ client.urgent           #ffffff #900000 #ffffff #900000   #900000
 client.placeholder      #ffffff #0c0c0c #ffffff #000000   #0c0c0c
 
 # launch polybar
-exec_always --no-startup-id $HOME/_scripts/launch.sh
+exec_always --no-startup-id $HOME/personal/repos/dot/_scripts/launch.sh
 
 # borders
 default_border pixel 3 
