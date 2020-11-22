@@ -54,7 +54,7 @@ export PGDATABASE="postgres"
 export GUROBI_HOME="/opt/gurobi810/linux64"
 export PATH="${PATH}:${GUROBI_HOME}/bin"
 export GUROBI_LIB="gurobi81"
-export GRB_LICENSE_FILE="/opt/gurobi810/gurobi.lic"
+export GRB_LICENSE_FILE="/opt/gurobi.lic"
 
 # Cplex
 export CPLEX_HOME="/opt/cplex128"
@@ -71,7 +71,6 @@ function _grb_6()
 {
     export GUROBI_HOME="/opt/gurobi651/linux64"
     export PATH="${PATH}:${GUROBI_HOME}/bin"
-    # export LD_LIBRARY_PATH="${LD_LIBRARY_PATH}:${GUROBI_HOME}/lib"
     export GUROBI_LIB="gurobi65"
     export GUROBI_INCLUDE_DIR="/opt/gurobi651/linux64/include"
 }
