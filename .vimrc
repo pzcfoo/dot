@@ -53,7 +53,8 @@ set showcmd
 set visualbell
 set cmdheight=3
 
-let mapleader = ","
+" let mapleader = ","
+let mapleader = "\<Space>"
 nnoremap <C-L> :nohl<CR><C-L>
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
@@ -65,7 +66,9 @@ nnoremap <leader>k <C-W><C-K>
 nnoremap <leader>l <C-W><C-L>
 nnoremap <leader>h <C-W><C-H>
 
-nmap <leader>nt :NERDTree
 nmap <Leader>ag :Ack!<Space>
+
+map <Leader>b :Buffers<CR>
+map <Leader>f :Files<CR>
 
 silent! helptags ALL
