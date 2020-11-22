@@ -10,8 +10,9 @@ Plug 'autozimu/LanguageClient-neovim', {
     \ }
 Plug('Shougo/deoplete.nvim')
 Plug('mileszs/ack.vim')
-Plug('junegunn/fzf')
-Plug('scrooloose/nerdtree')
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 Plug('vim-airline/vim-airline')
 Plug('vim-airline/vim-airline-themes')
 Plug('bfrg/vim-cpp-modern')
@@ -79,3 +80,6 @@ augroup LSP
   autocmd!
   autocmd FileType cpp,c call SetLSPShortcuts()
 augroup END 
+
+" FZF
+let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.8,'yoffset':0.5,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
